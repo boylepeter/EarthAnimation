@@ -33,6 +33,9 @@ const earth = new THREE.Mesh(
 
 scene.add(earth);
 
+earth.position.z = -10;
+earth.position.setX(-10);
+
 const controls = new OrbitControls(camera, renderer.domElement);
 
 function addFlash(){
@@ -69,6 +72,7 @@ function animate(){
 }
 
 animate()
+
 
 
 
